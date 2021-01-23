@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Connecting to docker , publishing to port 80.........."
+docker run -dt --rm --name sqli-lab -p 80:80 acgpiano/sqli-labs:latest
